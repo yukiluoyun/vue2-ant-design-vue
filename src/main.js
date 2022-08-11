@@ -10,6 +10,9 @@ import '@/plugins/vEchart'
 import ECharts from 'vue-echarts'
 Vue.component('v-chart', ECharts)
 
+import scroll from 'vue-seamless-scroll'
+Vue.use(scroll)
+
 import '@/plugins/flexible.js'
 import animated from 'animate.css'
 Vue.use(animated)

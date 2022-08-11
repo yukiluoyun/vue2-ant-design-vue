@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="outer">
     <div
       style="background-color: rgb(236, 236, 236, 0.3); padding: 20px"
       v-waves
@@ -50,6 +50,13 @@
           </a-card>
         </a-col>
       </a-row>
+      <a-row :gutter="16" class="row3">
+        <a-col :span="12">
+          <a-card title="数据类表格自动滚动" :bordered="false">
+            <table-scroll />
+          </a-card>
+        </a-col>
+      </a-row>
     </div>
   </div>
 </template>
@@ -63,6 +70,7 @@ import DemoChart from '@/components/demo/DemoChart'
 import DemoTable from '@/components/demo/Table'
 import TdMap from '@/components/TiandiMap'
 import ChartMap from '@/components/ChartMap'
+import TableScroll from '@/components/demo/TableScroll'
 export default {
   name: 'demo',
   data() {
@@ -77,7 +85,8 @@ export default {
     DemoChart,
     DemoTable,
     TdMap,
-    ChartMap
+    ChartMap,
+    TableScroll
   },
 
   methods: {},
@@ -87,6 +96,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.outer {
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+}
 .wrap {
   display: flex;
 }
