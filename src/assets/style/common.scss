@@ -259,7 +259,8 @@ p {
   > .right {
     right: 20px;
   }
-  .left > div {
+  .left > div,
+  .right > div {
     margin-top: calc(1500vh / 1080);
   }
   .left .item-block,
