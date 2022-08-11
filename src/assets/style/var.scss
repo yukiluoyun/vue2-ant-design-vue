@@ -1,0 +1,99 @@
+$cyan: rgb(28, 253, 255);
+$yellow: #ffdc74;
+$blue: #5ba5ff;
+$green: #02e8eb;
+$blue2: #5a57ff;
+$green2: #00ea9b;
+$red: #fe5a75;
+$orange: #d2814d;
+$whiteText: rgba(223, 223, 233, 0.8);
+@mixin yellow {
+  color: $yellow;
+}
+@mixin blue {
+  color: $blue;
+}
+@mixin blue2 {
+  color: $blue2;
+}
+@mixin cyan {
+  color: $cyan;
+}
+@mixin green {
+  color: $green2;
+}
+@mixin orange {
+  color: $orange;
+}
+
+@mixin brown-liner-bg {
+  background: linear-gradient(to right, rgb(97, 58, 58), rgba(97, 58, 58, 0.7));
+}
+@mixin green-liner-bg {
+  background: linear-gradient(to right, rgb(4, 90, 113), rgba(4, 90, 113, 0.7));
+}
+@mixin blue-liner-bg {
+  background: linear-gradient(
+    to right,
+    rgb(25, 61, 123),
+    rgba(25, 61, 123, 0.7)
+  );
+}
+@mixin red-liner-bg {
+  background: linear-gradient(
+    to right,
+    rgb(254, 90, 117),
+    rgba(254, 90, 117, 0.5)
+  );
+}
+@mixin yellow-liner-bg {
+  background: linear-gradient(to right, rgb(72, 87, 82), rgba(46, 61, 70, 0.5));
+}
+@mixin brown-liner-bg-0 {
+  background: linear-gradient(
+    to right,
+    rgb(72, 87, 82, 0.7) 10%,
+    rgba(72, 87, 82, 0)
+  );
+}
+@mixin green-liner-bg-0 {
+  background: linear-gradient(
+    to right,
+    rgb(4, 90, 113, 0.7) 10%,
+    rgba(4, 90, 113, 0)
+  );
+}
+@mixin blue-liner-bg-0 {
+  background: linear-gradient(
+    to right,
+    rgb(25, 61, 123, 0.7) 10%,
+    rgba(25, 61, 123, 0)
+  );
+}
+@mixin red-liner-bg-0 {
+  background: linear-gradient(
+    to right,
+    rgb(254, 90, 117, 0.24) 10%,
+    rgba(254, 90, 117, 0)
+  );
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(3px);
+  }
+  60% {
+    transform: translateY(10px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,25 @@
+<svg id="空调" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="71" viewBox="0 0 57 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #25e2dd;
+        stroke: #fff;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="694" y="501" width="57" height="71" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.052" dy="3" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.646"/>
+      <feFlood result="flood" flood-color="#888887" flood-opacity="0.51"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-694 -501)" style="fill: #25e2dd; filter: url(#filter)">
+    <path id="椭圆_1041_拷贝" data-name="椭圆 1041 拷贝" class="cls-1" d="M722,505c11.6,0,21,10.745,21,24,0,5.451-6.177,11.831-10.359,17.454C726.654,554.5,722,561,722,561s-4.78-6.61-10.8-14.756C707.089,540.673,701,534.384,701,529,701,515.745,710.4,505,722,505Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-694 -501)" xlink:href="#椭圆_1041_拷贝" style="stroke: #fff; filter: none; fill: none"/>
+  <image id="kongdiao" x="12" y="17" width="32" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAWCAYAAAChWZ5EAAABC0lEQVRIie3VoUpEQRSH8d9cL4KyC4JFTdoEk6AW38BoNIjV4DNY7RbBB/AZBOOCwSaCWSyiQURR2F32GPauqGz0zi3+4ZSZ8H0znJmTImIHp5iWP+cpIm6x3AAcFE2Bq7wW6DZp0PQN/Aso0G6Q3y7xiAX0M8MLvKSIgEn5X0OJfokjLGKQWSDhI0XEM2Yyw79S4r4S6KJXmdWdhCm8lWhVi3s4ywAfpYdWiTssYQMPmKgZPDBs+hJSRKzgAnM1g8flcPQMT7CLfcwjagImw5M/4RLXI4FNdORpwJ9GlQBcYS23xPdhtI4bw+7czmYQEb/rOCLeI6ITEVtj9v+0xo3jA6waflCzdV/AJyoXnS4I9eqOAAAAAElFTkSuQmCC"/>
+</svg>

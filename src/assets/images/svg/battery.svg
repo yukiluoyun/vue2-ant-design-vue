@@ -1,0 +1,25 @@
+<svg id="蓄电池检测" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="71" viewBox="0 0 57 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #25e2dd;
+        stroke: #fff;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="886" y="308" width="57" height="71" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.052" dy="3" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.646"/>
+      <feFlood result="flood" flood-color="#888887" flood-opacity="0.51"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-886 -308)" style="fill: #25e2dd; filter: url(#filter)">
+    <path id="椭圆_1041_拷贝_2" data-name="椭圆 1041 拷贝 2" class="cls-1" d="M914,312c11.6,0,21,10.745,21,24,0,5.451-6.177,11.831-10.359,17.454C918.654,361.5,914,368,914,368s-4.78-6.61-10.8-14.756C899.089,347.673,893,341.384,893,336,893,322.745,902.4,312,914,312Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-886 -308)" xlink:href="#椭圆_1041_拷贝_2" style="stroke: #fff; filter: none; fill: none"/>
+  <image id="xudianchi" x="14" y="14" width="28" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAWCAYAAADTlvzyAAABaklEQVRIid3WvUoeURAG4Of70RCikqAIJsE6hZWNiHcgpMgteAe5llRpvIrgBQRia2GRWgUNIop+/iUfOin2COvxZEXiWvjCyzKzc+adGc4OKyJkXImIw4jYi4j9iNiNiNlCXImfI+Ionf2Vzi/UY/ru4j3eZL5pbBdic8zjdeabrBt9jOIFhogkmGMOm+g0iAXeFvwzKX8PV52IWMMS/uA6VdTLDl3iBN0GsZtu8phznGIEx52I+IkPDZU/Kro4eioxDP41otbw/AVL3+H/4kx121+W8rfR4TLe4XvpZanDa9US6Ga+Ec0FXiVuYYDdlKevtjBKCb5iosDVBjH4mOJ2kr2S7B/1oFKHA9XWyXF6j+A+ftfsYWLdpxMR61jMEh+6O9JJvGoQPMAFFrCHL/iEKdUuhUGpw7HEh2IqPedS0fOqy3MLbXwW31RjLE6jDcHRxCKe/2rrqn4fngrjfWyotsiwZbEeTv4C7G2enEBCFv4AAAAASUVORK5CYII="/>
+</svg>

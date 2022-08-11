@@ -1,0 +1,22 @@
+<svg id="PUE超标机房" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #aad0ff;
+        stroke-linecap: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #aad0ff;
+      }
+    </style>
+  </defs>
+  <path id="椭圆_1259" data-name="椭圆 1259" class="cls-1" d="M546.388,330.179A15,15,0,1,1,536,326" transform="translate(-520 -325)"/>
+  <rect id="矩形_1253" data-name="矩形 1253" class="cls-2" x="15" y="1" width="2" height="8"/>
+  <image id="矩形_1253_拷贝" data-name="矩形 1253 拷贝" x="6" y="17" width="20" height="8" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAAZ0lEQVQokWNcdeH/YQYGBhsGKgEmahoGMxAGtjMwMEhB8XZC4qH6DIzIGJuByaH6DM9D9RmeMzAwJBMhTtCFyOA/ieJwwILEnrP6IkMyAwMDMwMDwywixLECxlUX/hO0lRSAy8tkAwDO0hv7BlotRAAAAABJRU5ErkJggg=="/>
+  <circle id="椭圆_1254_拷贝_3" data-name="椭圆 1254 拷贝 3" class="cls-2" cx="16" cy="13" r="2"/>
+  <circle id="椭圆_1254_拷贝_4" data-name="椭圆 1254 拷贝 4" class="cls-2" cx="25" cy="4" r="2"/>
+</svg>

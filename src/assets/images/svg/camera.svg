@@ -1,0 +1,25 @@
+<svg id="摄像头" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="71" viewBox="0 0 57 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #25e2dd;
+        stroke: #fff;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="988" y="524" width="57" height="71" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.052" dy="3" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.646"/>
+      <feFlood result="flood" flood-color="#888887" flood-opacity="0.51"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-988 -524)" style="fill: #25e2dd; filter: url(#filter)">
+    <path id="椭圆_1041" data-name="椭圆 1041" class="cls-1" d="M1016,528c11.6,0,21,10.745,21,24,0,5.451-6.18,11.831-10.36,17.454C1020.65,577.5,1016,584,1016,584s-4.78-6.61-10.8-14.756c-4.11-5.571-10.2-11.86-10.2-17.244C995,538.745,1004.4,528,1016,528Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-988 -524)" xlink:href="#椭圆_1041" style="stroke: #fff; filter: none; fill: none"/>
+  <image id="u407_拷贝" data-name="u407 拷贝" x="15" y="16" width="27" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAATCAYAAABhh3Y4AAAA/0lEQVRIie3VIUuDURSH8efMKRjNLwtmv4BgM1hkgmFgMWj0CywOTGaTxaDFsrhsEb+DxWYQi1iGIOMxuBde3K4638tA8B/vOdwf91y4NwDUANrALrDCz/MK3ALnETFMNakFsIDaVPvWy53aSkDr6ov6jNqrCZW5mQJtqsOyAfUhE6a6VoG2qpBqAyhmuKPvsjqGdoABsFwtNjJCAE21A/SBxYliZmwP6JA4RKhmBpPJPcZ/7O9h9/PEusDFvLARcACcpbDk1/CLPEWEwBFwOlFVrzI9wo/q0qe9T6oNqC3rv/xv6va0o6rH455RuVCol358crMi1+rGV7NV99XDd038Kt5OsbkiAAAAAElFTkSuQmCC"/>
+</svg>

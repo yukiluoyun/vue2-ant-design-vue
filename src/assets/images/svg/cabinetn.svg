@@ -1,0 +1,25 @@
+<svg id="机柜" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="71" viewBox="0 0 57 71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #25e2dd;
+        stroke: #fff;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1160" y="341" width="57" height="71" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="0.052" dy="3" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2.646"/>
+      <feFlood result="flood" flood-color="#888887" flood-opacity="0.51"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(-1160 -341)" style="fill: #25e2dd; filter: url(#filter)">
+    <path id="椭圆_1041_拷贝_3" data-name="椭圆 1041 拷贝 3" class="cls-1" d="M1188,345c11.6,0,21,10.745,21,24,0,5.451-6.18,11.831-10.36,17.454C1192.65,394.5,1188,401,1188,401s-4.78-6.61-10.8-14.756c-4.11-5.571-10.2-11.86-10.2-17.244C1167,355.745,1176.4,345,1188,345Z" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use transform="translate(-1160 -341)" xlink:href="#椭圆_1041_拷贝_3" style="stroke: #fff; filter: none; fill: none"/>
+  <image id="jichushuju-jiguitucopy" x="15" y="12" width="26" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAABeklEQVRIie2Wz0rDQBCHv8RaFVoLUhClBy14EJ/Jqwqe+gJ68aIvIuIrePQNvAnqwT8IxR4aBGus42EndBIXNEvqyR8skwnZ/XYms5MgIj0RGcj0lIjIcSQiwh8oNtcdYBGIKhoNXe8FoGZAjxUH8ap2XARFgCiwqcNO+iwJ2tS14iIoe1erZif76h+UhADM5DxTHegYqn9o7t0EVFtH5/ZFRGqenTTU7gCXwArQDYgoso4PlAJ1XMouAgBeWVATSIC5wq4qOWcWlKrdBmZx1bIGjAgr/TMmJY7tDFlObQSpQkPUBe6APtCOPQ8kak9x7yoCngNAqXV8oExDc/0RAMrpp9RdA8tAK2DtXOpsMdSBd+AIV3k1YAO4Am4DQAPr2Iha5NNVlb5FlBXBPa47NJn0qwTtwiW0BTxljq+pdtSOgT3Cm2q+6/w31VD5QOtMDvIC7ss6Clj7Qa0UQfPAG6ZSqpQ9RwPK/xf8Rm1wEZ0Au8DSFCDgPhXnXzkKfNdGo01bAAAAAElFTkSuQmCC"/>
+</svg>

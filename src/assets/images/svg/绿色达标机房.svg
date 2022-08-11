@@ -1,0 +1,25 @@
+<svg id="绿色达标机房" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="37.25" viewBox="0 0 32 37.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #aad0ff;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #aad0ff;
+      }
+    </style>
+    <image id="image" width="20" height="8" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAAZ0lEQVQokWNcdeH/YQYGBhsGKgEmahoGMxAGtjMwMEhB8XZC4qH6DIzIGJuByaH6DM9D9RmeMzAwJBMhTtCFyOA/ieJwwILEnrP6IkMyAwMDMwMDwywixLECxlUX/hO0lRSAy8tkAwDO0hv7BlotRAAAAABJRU5ErkJggg=="/>
+  </defs>
+  <path id="椭圆_1259" data-name="椭圆 1259" class="cls-1" d="M535,251a15,15,0,0,1-11.28-24.888M535,221a15,15,0,0,1,8.051,27.658" transform="translate(-519 -216.812)"/>
+  <use id="矩形_1253" data-name="矩形 1253" x="6" y="11.188" xlink:href="#image"/>
+  <use id="矩形_1253_拷贝" data-name="矩形 1253 拷贝" x="6" y="20.188" xlink:href="#image"/>
+  <path id="三角形_1286" data-name="三角形 1286" class="cls-2" d="M528.145,222.523l5.843-5.719,2.192,7.238Z" transform="translate(-519 -216.812)"/>
+  <path id="三角形_1286_拷贝" data-name="三角形 1286 拷贝" class="cls-2" d="M537.7,251.033l-7.6,3.029,0.765-7.524Z" transform="translate(-519 -216.812)"/>
+</svg>

@@ -1,0 +1,804 @@
+@import './var.scss';
+ul,
+li {
+  list-style: none;
+  padding-bottom: 0;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.cyan {
+  color: $cyan;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.blue {
+  color: $blue;
+}
+
+.green {
+  color: $green;
+}
+
+.green2 {
+  color: $green2;
+}
+
+.red {
+  color: $red;
+}
+
+.orange {
+  color: $orange;
+}
+
+// ant input\select等表单元素样式重置：背景色、边线
+.ant-input,
+.ant-select {
+  // width: 180px !important; /*no*/
+  border-color: #316db3;
+  background: #064983 !important;
+  color: #fff;
+  border: 1px solid #2167ac;
+  border-radius: 4px;
+}
+
+.ant-select-selection {
+  background: #064983 !important;
+  border-color: #316db3 !important;
+}
+
+.ant-select-selection--single {
+  height: calc(3600vh / 1080);
+  line-height: calc(3600vh / 1080);
+}
+
+.ant-calendar-picker-clear,
+.ant-calendar-picker-icon {
+  right: 10px;
+  color: #3a84d6;
+}
+
+.ant-calendar-picker {
+  + .ant-calendar-picker {
+    margin-left: 5px;
+  }
+}
+
+.ant-calendar-picker-clear,
+.ant-calendar-picker-icon,
+.ant-select-arrow {
+  color: #2c9cff;
+}
+
+.ant-select-selection-selected-value {
+  color: #fff !important;
+}
+
+.ant-select-arrow {
+  color: #3a84d6 !important;
+}
+
+// 有渐变有标志色的标题
+.small-title {
+  flex: 1;
+  font-size: 14px;
+
+  &.left {
+    padding-left: 5px !important;
+    text-align: left;
+    border-left: 4px solid #438be0;
+    background: linear-gradient(
+      to right,
+      rgba(26, 72, 121, 1),
+      rgba(26, 72, 121, 0)
+    );
+  }
+
+  &.right {
+    padding-right: 5px !important;
+    text-align: right;
+    border-right: 4px solid #438be0;
+    background: linear-gradient(
+      to left,
+      rgba(26, 72, 121, 1),
+      rgba(26, 72, 121, 0)
+    );
+  }
+}
+
+// 左边有标志色的标题
+.flag-title {
+  position: relative;
+  text-align: left;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: -0.03645833rem;
+    content: '';
+    width: 0.015625rem;
+    height: 1em;
+    top: 0.25em;
+    background: #438be0;
+  }
+}
+
+// 切换 tab-bar 本月 本周 本日
+.tab-bar-group-small {
+  display: flex;
+
+  span {
+    display: inline-flex;
+    padding: 0 7px;
+    cursor: pointer;
+
+    &.active {
+      border-radius: 3px;
+      background: #228be6;
+      color: #fff;
+      justify-content: center;
+    }
+  }
+}
+
+// 时间表单
+.time-rang {
+  width: 200px !important;
+
+  .ant-calendar-picker-input {
+    background: #18395c;
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #1566b0;
+    font-size: 12px;
+  }
+
+  .ant-calendar-range-picker-separator {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  :deep .ant-input {
+    background: #18395c;
+    border: 1px solid #18395c;
+  }
+}
+
+// 上下四个边角样式-向下
+.toBottomArrow {
+  position: relative;
+
+  &:before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid #addcee;
+    border-bottom: none;
+    top: 0;
+    z-index: 2;
+  }
+
+  &::before {
+    left: 0;
+    border-right: none;
+  }
+
+  &::after {
+    right: 0;
+    border-left: none;
+  }
+}
+
+// 上下四个边角样式-向上
+.toTopArrow {
+  position: relative;
+
+  &:before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid #addcee;
+    border-top: none;
+    bottom: 0;
+  }
+
+  &::before {
+    left: 0;
+    border-right: none;
+  }
+
+  &::after {
+    right: 0;
+    border-left: none;
+  }
+}
+
+// 首页、领导驾驶舱
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: calc(100% - calc(7600vh / 1080));
+  padding: 0 calc(1500vh / 1080);
+  // background: url(../images/page-body-bg.jpg) no-repeat center;
+  background-size: 100% 100%;
+  color: rgba(223, 223, 233, 0.8);
+  position: absolute;
+
+  > .left,
+  > .right {
+    position: fixed;
+    top: calc(7600vh / 1080);
+    width: 400px;
+    z-index: 3;
+  }
+
+  > .left {
+    left: 20px;
+  }
+
+  > .right {
+    right: 20px;
+  }
+  .left > div {
+    margin-top: calc(1500vh / 1080);
+  }
+  .left .item-block,
+  .right .item-block,
+  .center .item-group .item-block,
+  .center .bottom > .item-block {
+    background-color: rgba(8, 29, 50, 0.7);
+
+    > .title {
+      .item-title-bg {
+        width: 22px;
+        height: auto;
+      }
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 2px solid #addcee;
+        border-bottom: none;
+        top: calc(4000vh / 1080);
+        z-index: 2;
+      }
+
+      &::before {
+        left: 0;
+        border-right: none;
+      }
+
+      &::after {
+        right: 0;
+        border-left: none;
+      }
+    }
+
+    > .content {
+      border: 1px solid #07afff;
+      position: relative;
+      padding: calc(1500vh / 1080);
+      box-sizing: border-box;
+      // box-shadow: inset 0 50px 10px rgba(7,175,255,0.5);
+      box-shadow: inset 0px 0px 15px 0px rgba(7, 175, 255, 0.5);
+      height: calc(100% - 4000vh / 1080);
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 2px solid #addcee;
+        border-top: none;
+        bottom: 0;
+      }
+
+      &::before {
+        left: 0;
+        border-right: none;
+      }
+
+      &::after {
+        right: 0;
+        border-left: none;
+      }
+    }
+  }
+
+  // 顶部光
+  &::before {
+    position: absolute;
+    left: 50%;
+    top: 2px;
+    transform: translateX(-50%);
+    content: '';
+    width: 700px;
+    height: calc(16000vh / 1080);
+    background: url(../images/header-light.png) no-repeat center;
+    // background-image: radial-gradient(
+    //   ellipse,
+    //   rgba(255, 255, 255, 1),
+    //   rgba(255, 255, 255, 0) 30%
+    // );
+
+    background-size: 100% 100%;
+    z-index: 2;
+  }
+
+  // 底部装饰条
+  &::after {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100vw;
+    height: calc(2800vh / 1080);
+    background: url(../images/footer-bg.png) no-repeat center;
+    background-size: 100% 100%;
+    z-index: 3;
+  }
+
+  > .ant-row > .right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .chart {
+    width: 100%;
+  }
+
+  > .ant-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.map-wrap {
+  width: 700px;
+  margin: 0 auto;
+  height: calc(100000vh / 1080);
+  z-index: 1;
+  .block-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    top: calc(7600vh / 1080);
+    left: 480px;
+    z-index: 3;
+    li {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      width: 180px;
+      height: calc(8200vw / 1920);
+      border-radius: 5px;
+      justify-content: center;
+      margin-bottom: 10px;
+      color: #fff;
+      font-size: 18px;
+      text-align: center;
+      mark {
+        background: none;
+        color: #fff;
+        font-size: 20px;
+        padding: 0 15px;
+      }
+      i {
+        font-style: normal;
+      }
+      &:nth-of-type(1) {
+        border: 1px solid #5ba5ff;
+        @include blue-liner-bg;
+      }
+      &:nth-of-type(2) {
+        border: 1px solid #2fb688;
+        @include green-liner-bg;
+      }
+      &:nth-of-type(3) {
+        border: 1px solid #fb983b;
+        @include brown-liner-bg;
+      }
+    }
+  }
+}
+
+// 首页、领导驾驶舱的弹窗
+.modal-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #07afff;
+  z-index: 3;
+
+  > .mask {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .inner-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 60, 112, 1);
+
+    > .title {
+      height: 52px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      color: #fff;
+      font-size: 22px;
+
+      // font-weight: bold;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 70%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        content: '';
+        transform: translateX(-50%);
+        z-index: -1;
+        height: 0;
+        border-top: 52px solid #0d60a9;
+        border-right: 52px solid transparent;
+        border-left: 52px solid transparent;
+      }
+
+      .icon {
+        position: absolute;
+        right: 6px;
+        top: 4px;
+        z-index: 10;
+        padding: 5px;
+        // color: red;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.85);
+      }
+    }
+
+    > .content {
+      color: #fff;
+      padding: calc(3000vh / 1080) 60px;
+
+      > .item {
+        > .title {
+          font-size: 24px;
+          height: 64px;
+          line-height: 64px;
+
+          .icon {
+            font-size: 30px;
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  // 前面有根蓝色竖线，并文字有渐变蓝色背景的title
+  .modal-small-title {
+    position: relative;
+    display: inline-flex;
+    margin-left: 10px !important;
+    padding-right: 50px !important;
+    padding-left: 10px !important;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    background: linear-gradient(
+      to right,
+      rgba(67, 139, 224, 1),
+      rgba(67, 139, 224, 0)
+    );
+
+    &::before {
+      width: 3px;
+      height: 40px;
+      background-color: #438be0;
+      content: '';
+      left: -6px;
+      top: 0;
+      position: absolute;
+    }
+  }
+}
+
+// 查询表格顶部的搜索表单样式
+.table-search-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  .ant-form-item {
+    display: flex;
+    margin: 0 20px 20px 0;
+    height: calc(3600vh / 1080);
+    line-height: calc(3600vh / 1080);
+
+    .ant-form-item-label {
+      line-height: normal;
+      display: inline-flex;
+      align-items: center;
+
+      label {
+        // width: 160px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+
+    .ant-form-item-children {
+      display: flex;
+    }
+  }
+
+  .ant-input,
+  .ant-select {
+    width: 180px !important;
+    /*no*/
+    border-color: #316db3;
+    color: #fff;
+  }
+
+  // .ant-select-selection {
+  //   background: #064983 !important;
+  //   border-color: #316db3;
+  // }
+
+  // .ant-select-selection--single {
+  //   height: calc(3600vh / 1080);
+  //   line-height: calc(3600vh / 1080);
+  // }
+
+  // .ant-calendar-picker-clear,
+  // .ant-calendar-picker-icon {
+  //   right: 10px;
+  //   color: #3a84d6;
+  // }
+
+  .ant-calendar-picker {
+    + .ant-calendar-picker {
+      margin-left: 5px;
+    }
+  }
+
+  .ant-calendar-picker-clear,
+  .ant-calendar-picker-icon,
+  .ant-select-arrow {
+    color: #2c9cff;
+  }
+
+  .reset-btn {
+    border-color: #2c9cff;
+    margin-left: 10px;
+    background: none;
+    color: #fff;
+  }
+}
+
+// 封装的表格样式
+.my-table {
+  .ant-table-thead,
+  .ant-table-header {
+    background: #0d60a9 !important;
+  }
+
+  .ant-table-placeholder,
+  .ant-table-fixed-header
+    > .ant-table-content
+    > .ant-table-scroll
+    > .ant-table-body,
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    background: #003c70 !important;
+    border-bottom: 1px solid #003c70 !important;
+    color: #fff;
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .ant-table-thead > tr > th {
+    padding: 12px 16px;
+    background: #0d60a9 !important;
+  }
+
+  .ant-table-tbody > tr > td {
+    border-bottom: 1px solid #0d60a9 !important;
+  }
+
+  .ant-table-scroll {
+    border: none !important;
+  }
+
+  .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+    background: #fff;
+  }
+
+  .operation > button {
+    margin-left: 10px;
+  }
+
+  .td-status {
+    display: inline-flex;
+    justify-content: center;
+    padding: 3px 10px;
+
+    &.blue {
+      background-color: rgba(13, 96, 169, 0.2);
+      color: $blue;
+    }
+
+    &.red {
+      background-color: rgba(254, 90, 117, 0.2);
+      color: $red;
+    }
+
+    &.cyan {
+      background-color: rgba(61, 236, 255, 0.2);
+      color: $cyan;
+    }
+  }
+}
+
+// 表格分页样式
+.ant-pagination {
+  .ant-pagination-disabled a,
+  .ant-pagination-disabled:hover a,
+  .ant-pagination-disabled:focus a,
+  .ant-pagination-disabled .ant-pagination-item-link,
+  .ant-pagination-disabled:hover .ant-pagination-item-link,
+  .ant-pagination-disabled:focus .ant-pagination-item-link,
+  .ant-pagination-item,
+  .ant-pagination-item a,
+  .ant-pagination-prev .ant-pagination-item-link,
+  .ant-pagination-next .ant-pagination-item-link {
+    background-color: #0d60a9;
+    border-color: #0d60a9;
+    color: #fff;
+  }
+
+  .ant-pagination-item-active:focus a,
+  .ant-pagination-item-active:hover a,
+  .ant-pagination-jump-prev
+    .ant-pagination-item-container
+    .ant-pagination-item-ellipsis,
+  .ant-pagination-jump-next
+    .ant-pagination-item-container
+    .ant-pagination-item-ellipsis {
+    color: $cyan !important;
+  }
+
+  .ant-pagination-item-active a {
+    background-color: #fff;
+    color: #1890ff;
+  }
+
+  .ant-pagination-total-text {
+    color: #fff;
+    margin-left: 8px;
+    margin-top: 2.5px;
+    float: right !important;
+  }
+
+  .ant-pagination-options-quick-jumper {
+    color: #fff;
+
+    input {
+      background-color: #0d60a9;
+      border-color: #0d60a9;
+      color: #fff;
+    }
+  }
+}
+
+.my-popover {
+  // 机房鼠标经过样式
+  .ant-popover-inner {
+    background-color: rgb(5, 25, 52, 0.8);
+    color: #fff;
+  }
+
+  .ant-popover-arrow {
+    transform: translateX(-10px) rotate(0) !important;
+    border-width: 10px;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    bottom: -6px !important;
+    border-top-color: rgb(5, 25, 52, 0.8) !important;
+    border-right-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+  }
+
+  .ant-popover-title {
+    border-bottom: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .ant-popover-inner-content {
+    width: 260px;
+    border-bottom: none;
+    color: rgba(255, 255, 255, 0.7);
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      .title-btn {
+        color: $cyan;
+        cursor: pointer;
+      }
+
+      .close-btn {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+
+    .info {
+      p {
+        padding: 3px 0;
+      }
+
+      .btn {
+        cursor: pointer;
+
+        &.btn-border {
+          border: 1px solid $cyan;
+          padding: 1px 3px;
+          border-radius: 2px;
+          margin-top: 5px;
+          display: inline-block;
+        }
+      }
+
+      // p {
+      //   margin-bottom: 2px !important;
+      // }
+    }
+  }
+}

@@ -5,13 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="<%= BASE_URL %>iconfont/iconfont.css">
     <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
-</html>
+     <!-- <script src="http://api.tianditu.gov.cn/api?v=4.0&tk=65dba2ae022e23f525269e829bc02b5a"></script> -->
+     <style>
+      .fullscreen-btn{
+        position: fixed;
+        right:20px;
+        top:calc(3000vh / 1080);
+        z-index: 100;
+        width:calc(3400vw/1920);
+        cursor: pointer;
+      }
+      .fullscreen-btn img{
+        max-width: 100%;
+        height: auto;
+      }
+      #fullscreenHover{
+        display: none;
+      }
+    
+    </style>
+    </head>
+    
+    <body id="body">
+      <noscript>
+        <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+          Please enable it to continue.</strong>
+      </noscript>
+      <!-- 切换全屏 -->
+      <div class="fullscreen-btn" onclick="fullPage()" onmousemove="fullOver()" onmouseout="fullOut()">
+        <img src="<%= BASE_URL %>images/fullscreen_cyan.png" alt="" id="fullscreen">
+        <img src="<%= BASE_URL %>images/fullscreen_blue.png" alt="" id="fullscreenHover" >
+      </div>
+      <!-- <button onclick="fullPage()"> 全屏 </button> -->
+      <div id="app"></div>
+      <!-- built files will be auto injected -->
+    
+      <script>
+    
+        // 鼠标点击，切换全屏
+        let fullscreenFlag = false
+        let fullscreen = document.getElementById("fullscreen")
+        let fullscreenHover = document.getElementById("fullscreenHover")
+        function fullPage() {
+          const element = document.getElementById('body') // 设置后就是   id==con_lf_top_div 的容器全屏
+          if (fullscreenFlag) {
+            console.log("全屏状态==",fullscreenFlag)
+            if (document.exitFullscreen) {
+              document.exitFullscreen()
+            } else if (document.webkitCancelFullScreen) {
+              document.webkitCancelFullScreen()
+            } else if (document.mozCancelFullScreen) {
+              document.mozCancelFullScreen()
+            } else if (document.msExitFullscreen) {
+              document.msExitFullscreen()
+            }
+          } else {
+            console.log("不是全屏状态==",fullscreenFlag)
+            if (element.requestFullscreen) {
+              element.requestFullscreen()
+            } else if (element.webkitRequestFullScreen) {
+              element.webkitRequestFullScreen()
+            } else if (element.mozRequestFullScreen) {
+              element.mozRequestFullScreen()
+            } else if (element.msRequestFullscreen) {
+              element.msRequestFullscreen()
+            }
+          }
+          fullscreenFlag = !fullscreenFlag
+        }
+    
+        // 鼠标移入变色
+        function fullOver(){
+          fullscreen.style.display = "none"
+          fullscreenHover.style.display = "block"
+        }
+        // 鼠标移出变色
+        function fullOut(){
+          fullscreen.style.display = "block"
+          fullscreenHover.style.display = "none"
+        }
+    
+      </script>
+    </body>
+    
+    </html>
+    

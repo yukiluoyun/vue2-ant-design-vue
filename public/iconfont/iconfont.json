@@ -1,0 +1,121 @@
+{
+  "id": "3453875",
+  "name": "智慧机房",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5387604",
+      "name": "取消全屏",
+      "font_class": "guanbiquanping",
+      "unicode": "eb10",
+      "unicode_decimal": 60176
+    },
+    {
+      "icon_id": "5387606",
+      "name": "全屏",
+      "font_class": "quanping",
+      "unicode": "eb11",
+      "unicode_decimal": 60177
+    },
+    {
+      "icon_id": "30444624",
+      "name": "底框统一图标",
+      "font_class": "dikuangtongyitubiao",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "30325635",
+      "name": "全部PUE机房",
+      "font_class": "quanbuPUEjifang",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "30325784",
+      "name": "PUE超标机房",
+      "font_class": "PUEchaobiaojifang",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "30325785",
+      "name": "绿色达标机房",
+      "font_class": "lvsedabiaojifang",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "587146",
+      "name": "triangle-24",
+      "font_class": "arrow",
+      "unicode": "e820",
+      "unicode_decimal": 59424
+    },
+    {
+      "icon_id": "755551",
+      "name": "菱形",
+      "font_class": "lingxing",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "5387522",
+      "name": "关闭",
+      "font_class": "guanbi",
+      "unicode": "eaf2",
+      "unicode_decimal": 60146
+    },
+    {
+      "icon_id": "5387925",
+      "name": "箭头_向右两次_o",
+      "font_class": "doubleArrow",
+      "unicode": "eb91",
+      "unicode_decimal": 60305
+    },
+    {
+      "icon_id": "6616997",
+      "name": "关闭",
+      "font_class": "guanbi1",
+      "unicode": "eca0",
+      "unicode_decimal": 60576
+    },
+    {
+      "icon_id": "18166019",
+      "name": "精确搜索,查询,准确查找",
+      "font_class": "zuisu",
+      "unicode": "e8b0",
+      "unicode_decimal": 59568
+    },
+    {
+      "icon_id": "24952535",
+      "name": "晴天",
+      "font_class": "qingtian2",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "27260890",
+      "name": "数据分析、趋势-04",
+      "font_class": "fenxi",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "30315128",
+      "name": "收起 点击状态",
+      "font_class": "a-shouqidianjizhuangtai",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "30315131",
+      "name": "收起",
+      "font_class": "shouqi",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    }
+  ]
+}
