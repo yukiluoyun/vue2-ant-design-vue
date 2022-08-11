@@ -4,23 +4,6 @@
       style="background-color: rgb(236, 236, 236, 0.3); padding: 20px"
       v-waves
     >
-      <a-row :gutter="16" class="row1">
-        <a-col :span="8">
-          <a-card title="检测mock导入正常" :bordered="false">
-            <Mock />
-          </a-card>
-        </a-col>
-        <a-col :span="8">
-          <a-card title="检测rem是否配置正常" :bordered="false">
-            <demo-rem />
-          </a-card>
-        </a-col>
-        <a-col :span="8">
-          <a-card title="检测transition是否配置正常 " :bordered="false">
-            <transition />
-          </a-card>
-        </a-col>
-      </a-row>
       <a-row :gutter="16">
         <a-col :span="8">
           <a-card title="检测ant-design-vue是否导入正常" :bordered="false">
@@ -50,10 +33,27 @@
           </a-card>
         </a-col>
       </a-row>
-      <a-row :gutter="16" class="row3">
+      <a-row :gutter="16">
         <a-col :span="12">
           <a-card title="数据类表格自动滚动" :bordered="false">
             <table-scroll />
+          </a-card>
+        </a-col>
+        <a-col :span="12">
+          <a-card title="检测transition是否配置正常 " :bordered="false">
+            <transition />
+          </a-card>
+        </a-col>
+      </a-row>
+      <a-row :gutter="16" class="row1">
+        <a-col :span="8">
+          <a-card title="检测mock导入正常" :bordered="false">
+            <Mock />
+          </a-card>
+        </a-col>
+        <a-col :span="8">
+          <a-card title="检测rem是否配置正常" :bordered="false">
+            <demo-rem />
           </a-card>
         </a-col>
       </a-row>

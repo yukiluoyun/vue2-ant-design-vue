@@ -137,7 +137,7 @@ export default {
 .jg-dw-jr {
   margin-top: 10px;
   background: #062043;
-  background-image: url(../../assets/images/down.png);
+  background-image: url(../../assets/images/up.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 20px;
